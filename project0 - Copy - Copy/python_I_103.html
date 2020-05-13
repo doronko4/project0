@@ -1,0 +1,318 @@
+﻿<!doctype HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="css/python.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onload="updateStorage()">
+  <header>
+    <ul class="nav nav-pills nav-fill">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Intro</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="python_I_101.html">Colors Spiral</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="python_I_102.html">Printing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="python_I_103.html">Variables</a>
+      </li>
+    </ul>
+  </header>
+  <br>
+  <section>
+    <h2 id="colorSpiralTitle" class="chapterTitle">Variables</h2>
+    <iframe src="https://trinket.io/embed/python/93dfadb1a2" height="300"> </iframe>
+
+    <div class="container-fluid">
+
+      <!-- 1st row -->
+      <div class="row">
+        <div class="col-6">
+          <p class="ordinal">1</p>
+          <p>Type the following code.</p>
+          <label for="q1">What is the value printed by the program?</label>
+          <input id="q1" class="numberText" type="text">
+        </div>
+
+        <div class="col-6">
+          <div class="content-frame">
+            <img class="codeImg" src="images/code python_I_103_1.png" alt="define number=8">
+          </div>
+        </div>
+      </div>
+
+      <!-- 2nd row -->
+      <div class="row">
+        <div class="col-6">
+          <p class="ordinal">2</p>
+          <p>Type the following code.</p>
+          <label for="q2">What is the value printed by the program?</label>
+          <input id="q2" class="numberText" type="text">
+
+          <p>
+            We won't discuess any aspect of all the things that appear in line 1. While in question 1 the variable 'number' was set to the value 8, in this question the code asks the user for a value for the variable 'number'. The operation in which a variable is set a value is called <strong>assignment</strong>.
+          </p>
+          A variable can be assigned using 3 methods:
+          <ul>
+            <li>
+              As in the 1<sup>st</sup> question, by assigning the variable the required value directly.
+            </li>
+            <li>
+              As the the 2<sup>nd</sup> question, by using the <em>input</em> command to ask the user to enter a value that will be assigned to the variable.<br> The <em>input</em> command will be taught later.
+            </li>
+            <li>
+              The most common method, by performing different calculation along the code.<br>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <div class="content-frame">
+            <img class="codeImg" src="images/code python_I_103_2.png" alt="incrementing a variable by 10">
+          </div>
+        </div>
+      </div>
+
+      <!-- 3rd row -->
+      <div class="row">
+        <div class="col-12">
+          <p class="ordinal">3</p>
+          <p>
+            Run the code you typed in question 2, and enter the number 7 when asked.
+          </p>
+
+          <label for="q3">What does the program print?</label>
+          <input id="q3" class="numberText" type="text">
+
+        </div>
+      </div>
+
+      <!-- 4th row -->
+      <div class="row">
+        <div class="col-6">
+          <p class="ordinal">4</p>
+          <p>
+            Run the program again, and enter any number but 7.<br> Is the printed number bigger by 10 that the value you entered?
+          </p>
+        </div>
+        <div class="col-6">
+          <div class="content-frame">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary btn-success">
+                <input type="radio" name="var_bigger_by10">Yes
+              </label>
+              <label class="btn btn-secondary btn-danger">
+                <input type="radio" name="var_bigger_by10">No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="height:25px; visibility: hidden"></div>
+
+      <!-- 5th row -->
+      <div class="row">
+        <div class="col-12">
+          <p class="ordinal">5</p>
+          <p>
+            One must follow some quite simple rules in order to name her variables, and this is exactly what you're going to investigate in the next exercise.<br> Following are some statements related to the names variables can get. Some of these statement are correct, some or wrong. Try to define a variable that its name follows the naming convention in the statement. If the operation ended successfuly, mark the statement as correct. Otherwise, mark it as wrong.
+          </p>
+          <p>
+            Taking the 1<sup>st</sup> statement as an example, try to define a variable using a name that starts with a letter (<strong>ex.</strong> abc), and give it a numeric value as is done in question 1. Run the code. Does it run? Try it once again, this time using a name that starts with a capital letter (<strong>ex.</strong> Abc). Since the code DOES run in both cases, it can be concluded that a variable's name can start with a letter.
+          </p>
+        </div>
+      </div>
+
+      <!-- 6th row -->
+      <div class="row">
+        <div class="col-6">
+          <p>
+            Variable's name can start with either upper (A,B,...) or lower (a,b,...) letter.
+          </p>
+        </div>
+        <div class="col-6">
+          <div class="content-frame">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary btn-success">
+                <input type="radio" name="var_bigger_by10">Yes
+              </label>
+              <label class="btn btn-secondary btn-danger">
+                <input type="radio" name="var_bigger_by10">No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7th row -->
+      <div class="row">
+        <div class="col-6">
+          <p>
+            Variable's name can start with a digit.
+          </p>
+        </div>
+        <div class="col-6">
+          <div class="content-frame">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary btn-success">
+                <input type="radio" name="letter">Yes
+              </label>
+              <label class="btn btn-secondary btn-danger">
+                <input type="radio" name="letter">No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8th row -->
+      <div class="row">
+        <div class="col-6">
+          <p>
+            Variable's name can contain the underscore symbol (_).
+          </p>
+        </div>
+        <div class="col-6">
+          <div class="content-frame">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary btn-success">
+                <input type="radio" name="underscore">Yes
+              </label>
+              <label class="btn btn-secondary btn-danger">
+                <input type="radio" name="underscore">No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9th row -->
+      <div class="row">
+        <div class="col-6">
+          <p>
+            Variable's name can contain the dollar sign ($).
+          </p>
+        </div>
+        <div class="col-6">
+          <div class="content-frame">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary btn-success">
+                <input type="radio" name="dollar">Yes
+              </label>
+              <label class="btn btn-secondary btn-danger">
+                <input type="radio" name="dollar">No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10th row -->
+      <div class="row">
+        <div class="col-6">
+          <p>
+            Variable's name can contain a period (.), or a comma (,), or the percent sign (%).
+          </p>
+        </div>
+        <div class="col-6">
+          <div class="content-frame">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary btn-success">
+                <input type="radio" name="symbol">Yes
+              </label>
+              <label class="btn btn-secondary btn-danger">
+                <input type="radio" name="symbol">No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 11th row -->
+      <div class="row">
+        <div class="col-6">
+          <p>
+            Varialbe's name can contain one or more spaces.
+          </p>
+        </div>
+        <div class="col-6">
+          <div class="content-frame">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary btn-success">
+                <input type="radio" name="space">Yes
+              </label>
+              <label class="btn btn-secondary btn-danger">
+                <input type="radio" name="space">No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 12th row -->
+      <div class="row">
+        <div class="col-6">
+          <p>
+            'number' and 'NUMBER' are the names of two different variables.
+          </p>
+        </div>
+        <div class="col-6">
+          <div class="content-frame">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary btn-success">
+                <input type="radio" name="case">Yes
+              </label>
+              <label class="btn btn-secondary btn-danger">
+                <input type="radio" name="case">No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 13th row -->
+      <div class="row">
+        <div class="col-12">
+          <p>
+            <strong>In summary, a variable's name</strong>
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <label for="var1">[Select]</label>
+          <select class="form-control" id="var1">
+            <option value="SELECT">[ - SELECT -]</option> 
+            <option value="startDigit">Can start with a digit,</option> 
+            <option value="startLetter">Can start with a letter</option>
+            <option value="startUnderscore">Must start with an underscore (_),</option>
+            <option value="startDollar">Must start with the dollar sign ($),</option>
+          </select>
+        </div>
+
+        <div class="col-6">
+          <label for="var2">and</label>
+          <select class="form-control" id="var2">
+ 					  <option value="contAlphanum">can contain letters and digits,</option> 
+ 					  <option value="contAlphanumSym">can contain letters, digits, and symbols like '$' or '%',</option> 
+ 					  <option value="contAlphanumUnderscore">can contain letter, digits, and under score (_),</option> 
+ 					  <option value="contAlphanumSpace">can contain letters, digits, and spaces,</option> 
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <input type="button" value="Check Answers">
+    <br>
+  </section>
+</body>
+
+</html>

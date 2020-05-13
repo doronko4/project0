@@ -1,0 +1,335 @@
+﻿<!doctype HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="css/python.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <ul class="nav nav-pills nav-fill">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Intro</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="python_I_101.html">Colors Spiral</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="python_I_102.html">Printing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="python_I_103.html">Variables</a>
+      </li>
+    </ul>
+  </header>
+  <br>
+  <section>
+    <h2 id="colorSpiralTitle" class="chapterTitle">Printing</h2>
+    <iframe src="https://trinket.io/embed/python/93dfadb1a2" height="300"> </iframe>
+
+    <div class="container-fluid">
+
+      <!-- 1st row -->
+      <div class="row">
+        <div class="col-12">
+          <p>
+            Printing has a huge importence in computer programs. Mainly, it allows to present answers to the questions raised by the users, such as what is the first prime number bigger than 500, what is the average of grades entered by the user, and many other usages.
+          </p>
+          <p>
+            This chapter deals with <strong>some</strong> of the characteriscis of the <em>print</em> command in Python.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="height:25px; visibility: hidden"></div>
+
+      <!-- 2nd row -->
+      <div class="row">
+        <div class="col-12">
+          <p class="ordinal">1</p>
+          <p>
+            Run each of the commands in the following table and fill the table with the results you get.
+          </p>
+          <ul>
+            <li>Pay attantion to the parenthesis and commas used in each command.</li>
+            <li>Pay attantion to the spaces in the results, becuase these are important when the answer is tested.</li>
+            <li>In line 11, write your name instead of the 3 question marks. Make sure you enclose your name with quotes (for exaple, "John").)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 3rd row -->
+      <div class="row">
+        <div class="col-12">
+          <table id="printing_table">
+            <thead>
+              <tr>
+                <th id="col1"></th>
+                <th id="col2">Command</th>
+                <th id="col3">Result</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="ordinal">1</td>
+                <td class="command">print (5)</td>
+                <td><input id="q1" type="text" size="20"></td>
+              </tr>
+              <tr>
+                <td class="ordinal">2</td>
+                <td class="command">print (5+2)</td>
+                <td><input id="q2" type="text"></td>
+              </tr>
+              <tr>
+                <td class="ordinal">3</td>
+                <td class="command">print (5-2)</td>
+                <td><input id="q3" type="text" size="20"></td>
+              </tr>
+              <tr>
+                <td class="ordinal">4</td>
+                <td class="command">print (5*2)</td>
+                <td><input id="q4" type="text"></td>
+              </tr>
+              <tr>
+                <td class="ordinal">5</td>
+                <td class="command">print (5 ** 2)</td>
+                <td><input id="q5" type="text" size="20"></td>
+              </tr>
+              <tr>
+                <td class="ordinal">6</td>
+                <td class="command">print ("5+2=")</td>
+                <td><input id="q6" type="text"></td>
+              </tr>
+              <tr>
+                <td class="ordinal">7</td>
+                <td class="command">print ("Hello")</td>
+                <td><input id="q7" type="text" size="20"></td>
+              </tr>
+              <tr>
+                <td class="ordinal">8</td>
+                <td class="command">print (5,2)</td>
+                <td><input id="q8" type="text"></td>
+              </tr>
+              <tr>
+                <td class="ordinal">9</td>
+                <td class="command">print ("Hello", "world")</td>
+                <td><input id="q9" type="text" size="20"></td>
+              </tr>
+              <tr>
+                <td class="ordinal">10</td>
+                <td class="command">lastname = "Python"<br>print ("Monty", lastname)</td>
+                <td><input id="q10" type="text"></td>
+              </tr>
+              <tr>
+                <td class="ordinal">11</td>
+                <td class="command">name= ???<br>print ("Hello", name, name)</td>
+                <td><input id="q11" type="text" size="20"></td>
+              </tr>
+              <tr>
+                <td class="ordinal">12</td>
+                <td class="command">print ("5+2=", 5+2)</td>
+                <td><input id="q12" type="text"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+      <!-- 4th row -->
+      <div class="row">
+        <div class="col-6">
+          <p>
+            It's possible to print the result of an arithmetic expression (lines 2-5 in the table.)
+          </p>
+        </div>
+        <div class="col-6">
+          <div class="content-frame">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary btn-success">
+                <input type="radio" name="var_bigger_by10">Yes
+              </label>
+              <label class="btn btn-secondary btn-danger">
+                <input type="radio" name="var_bigger_by10">No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5th row -->
+      <div class="row">
+        <div class="col-6">
+          <p>
+            The command in line 6 prints the result of the arithmetic expression.
+          </p>
+        </div>
+        <div class="col-6">
+          <div class="content-frame">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary btn-success">
+                <input type="radio" name="var_bigger_by10">Yes
+              </label>
+              <label class="btn btn-secondary btn-danger">
+                <input type="radio" name="var_bigger_by10">No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6th row -->
+      <div class="row">
+        <div class="col-6">
+          <p>
+            PriNt, print, and PRINT are all legitimate commands in order to print expressions in Python.
+          </p>
+        </div>
+        <div class="col-6">
+          <div class="content-frame">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary btn-success">
+                <input type="radio" name="var_bigger_by10">Yes
+              </label>
+              <label class="btn btn-secondary btn-danger">
+                <input type="radio" name="var_bigger_by10">No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7th row -->
+      <div class="row">
+        <div class="col-6">
+          <p>
+            The print command moves to the next line automoatically.
+          </p>
+        </div>
+        <div class="col-6">
+          <div class="content-frame">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary btn-success">
+                <input type="radio" name="var_bigger_by10">Yes
+              </label>
+              <label class="btn btn-secondary btn-danger">
+                <input type="radio" name="var_bigger_by10">No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8th row -->
+      <div class="row">
+        <div class="col-6">
+          <p>
+            It is possible to run the print command without the enclosing parenthesis.
+          </p>
+        </div>
+        <div class="col-6">
+          <div class="content-frame">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary btn-success">
+                <input type="radio" name="var_bigger_by10">Yes
+              </label>
+              <label class="btn btn-secondary btn-danger">
+                <input type="radio" name="var_bigger_by10">No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9th row -->
+      <div class="row">
+        <div class="col-6">
+          <p>
+            It is possible to use either single quotes (') or quotes (") in line 9.
+          </p>
+        </div>
+        <div class="col-6">
+          <div class="content-frame">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary btn-success">
+                <input type="radio" name="var_bigger_by10">Yes
+              </label>
+              <label class="btn btn-secondary btn-danger">
+                <input type="radio" name="var_bigger_by10">No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10th row -->
+      <div class="row">
+        <div class="col-6">
+          <p class="ordinal">2</p>
+          <p></p>
+          <label for="q2">
+            Look again at line 5:<br>
+            What is the name of the arithmetic operation represented by the two asterisks (**)?
+          </label>
+          <input id="q2" type="text" size="19" placeholder="the ** operator"><br>
+        </div>
+      </div>
+
+      <!-- 11th row -->
+      <div class="row">
+        <div class="col-6">
+          <p class="ordinal">3</p>
+          <p>
+            What is the purpose of the comma in lines 8-12?<br> If you are not sure, delete it, run the code, and see what has been changed.
+          </p>
+          <select class="form-control" id="sel1">
+            <option value="SELECT">[ - SELECT -]</option>
+            <option value="startDigit">has no effect on the result printed.</option> 
+            <option value="startLetter">move the cursor one line down.</option>
+            <option value="startUnderscore">adds a space between the printed things.</option>
+            <option value="startDollar">helps to evaluate the expression in the parenthesis.</option>
+          </select>
+        </div>
+
+        <div class="col-12"></div>
+      </div>
+
+      <!-- 12th row -->
+      <div class="row">
+        <div class="col-6">
+          <p class="ordinal">4</p>
+          <p>
+            Run the following line of code.
+          </p>
+          <p>
+            Try, based on the result you get, to print the numbers 1,2,3 in 3 separate lines using only <strong>one</strong> print command.
+          </p>
+          <input id="q21" class="code_answer" type="text" size="50">
+        </div>
+
+        <div class="col-6">
+          <div class="content-frame">
+            <img class="codeImg" src="images/code python_I_102_1.png" alt="define number=8">
+          </div>
+        </div>
+      </div>
+
+      <!-- 13th row -->
+      <div class="row">
+        <div class="col-12">
+          <p>
+            The entities 'name' and 'lastname' in lines 10 & 11 are called in the programming world 'variables'. Very few are the computer programs that don't use variables, and thus, variables are going to be the topic of the next lesson.
+          </p>
+        </div>
+      </div>
+
+      <br>
+      <input type="button" value="Check Answers" onclick="check_answers('python_I_102', 1,20)">
+      <br>
+    </div>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+#coverImg {
+  float: right;
+  width: 30%;
+}
+
+.coverTxt {
+  font-family: Arial;
+  font-weight: bold;
+  text-align: justify;
+}
+
+#worksheet {
+  font-size: 2em;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+#py1 {
+  margin: 10px 0px 40px 0px;
+  font-size: 4em;
+}
+
+#intro {
+  font-size: 1.1em;
+  width: 60%;
+  text-align: justify;
+}
+
+#lastUpdate {
+  text-align: center;
+  margin-top: 30px;
+}

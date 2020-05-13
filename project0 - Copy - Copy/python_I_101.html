@@ -1,0 +1,189 @@
+﻿<!doctype HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="css/python.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <ul class="nav nav-pills nav-fill">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Intro</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="python_I_101.html">Colors Spiral</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="python_I_102.html">Printing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="python_I_103.html">Variables</a>
+      </li>
+    </ul>
+  </header>
+  <br>
+  <section>
+    <h2 id="unitTitle" class="chapterTitle">Color Spiral</h2>
+    <iframe src="https://trinket.io/embed/python/93dfadb1a2" height="300px"> </iframe>
+
+    <div class="container-fluid">
+
+      <!-- 1st row -->
+      <div class="row">
+        <div class="col-12">
+          <p>
+            We'll start with a short code that uses some definitions and processes that are used almost in any Python program (and programs in many other programming languages).
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="height:25px; visibility: hidden"></div>
+
+      <div class="row"></div>
+
+      <div class="row">
+        <div class="col-6">
+          <p class="ordinal">1</p>
+          <p>
+            Copy the following code into the code editor.
+          </p>
+          <p>
+            <strong>Make sure to don't copy the line numbers, and that you add 2 spaces or a tab in the beginning of lines 11-14, as shown in the code snippet.</strong>
+          </p>
+          <p>When finished, click the run button (the third-to-left button at top of the code editor).<br><em>Don't bother to understand what each line does at this point.</em>
+          </p>
+        </div>
+        <div class="col-6">
+          <div class="content-frame">
+            <img class="codeImg" src="images/code python_I_100_1.png" alt="color spiral code">
+          </div>
+        </div>
+      </div>
+
+      <!-- 2nd row -->
+      <div class="row">
+        <div class="col-12">
+          <p class="ordinal">2</p>
+          <p></p>
+          <label for="q2">
+            How many colors are used to create the spiral?
+          </label>
+          <input id="q2" class="numberText" type="text">
+        </div>
+      </div>
+
+      <!-- 3rd row -->
+      <div class="row">
+        <div class="col-12">
+          <p class="ordinal">3</p>
+          <p>
+            Add the color 'light see green' to the square brackets in line 2, just after the color 'orange'.
+          </p>
+          <ul>
+            <li>Place a single-quote on each side of the new color, just as done with the other colors.</li>
+            <li>Add a comma between 'orange' and 'light blue green'.</li>
+            <li><strong>Run the code.</strong></li>
+          </ul>
+          <label for="q3">How many colors are shown in the spiral now?</label>
+          <input id="q3" class="numberText" type="text">
+        </div>
+      </div>
+
+      <!-- 4th row -->
+      <div class="row">
+        <div class="col-6">
+          <p class="ordinal">4</p>
+          <p>
+            In line 6, modify the value 50 to 100, and <strong>run the code.</strong>
+          </p>
+          <p>
+            Select the option the describes the best, in your opinion, the purpose of this value.
+          </p>
+        </div>
+        <div class="col-6">
+          <div class="content-frame">
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" id="loop_range" type="radio" name="loop_range" value="loop_range">
+              <label class="custom-control-label" for="loop_range">number of lines drawn by the code</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" id="color_range" type="radio" name="loop_range" value="color_range">
+              <label class="custom-control-label" for="color_range">number of colors in the spiral</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" id="speed" type="radio" name="loop_range" value="speed">
+              <label class="custom-control-label" for="speed">the speed in which the spiral is drawn</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5th row -->
+      <div class="row">
+        <div class="col-6">
+          <p class="ordinal">5</p>
+          <p>
+            Have a closer look at the width of the line of the spiral.
+          </p>
+          <p>
+            Select the best option.
+          </p>
+        </div>
+        <div class="col-6">
+          <div class="content-frame">
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" id="constant" type="radio" name="line_width" value="constant">
+              <label class="custom-control-label" for="constant">The width of the line is constant.</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" id="narrower" type="radio" name="line_width" value="narrower">
+              <label class="custom-control-label" for="narrower">The line becomes narrower as the spiral grows.</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" id="thicker" type="radio" name="line_width" value="thicker">
+              <label class="custom-control-label" for="thicker">The line becomes thicker as the spiral grows.</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <p>
+            After you've made your choice, change the content of the paranthesis in line 9 to the value 2 (so the line should be <em>tut.width(2)</em>), and <strong>Run.</strong>
+          </p>
+        </div>
+      </div>
+
+
+      <!-- 6th row -->
+      <div class="row">
+        <div class="col-12">
+          <p class="ordinal">6</p>
+          <p></p>
+          <label for="q6">What value shoudl be used in line 10 so the turtle walks forward 200 steps?</label>
+          <input id="q6" class="numberText" type="text">
+          <p>
+            Make the required changes in the code editor and <strong>run.</strong>
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <p>
+            The program you've written uses many elements that can be found almost in any written computer program. In the following lessons you will be introduced to some of these elements, elements you are going to use even further as your studies progresses.
+          </p>
+        </div>
+      </div>
+
+      <!-- Calculate, Encrypt & Send Score -->
+      <input type="button" value="Check Answers" onclick="#">
+    </div>
+  </section>
+</body>
+
+</html>
